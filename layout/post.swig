@@ -14,7 +14,9 @@
     {{ post_template.render(page) }}
 
     {% if page.comments %}
-      <div class="comments" id="comments">
+      <div id="uyan_frame"></div>
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2029132"></script>
+      <!--<div class="comments" id="comments">
         {% if (config.duoshuo and config.duoshuo.shortname) or config.duoshuo_shortname %}
           <div class="ds-thread" data-thread-key="{{ page.path }}"
                data-title="{{ page.title }}" data-url="{{ page.permalink }}">
@@ -24,7 +26,7 @@
             <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
           </div>
         {% endif %}
-      </div>
+      </div>-->
     {% endif %}
   </div>
 

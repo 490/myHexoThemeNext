@@ -1,6 +1,6 @@
 {% if (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %}
 
-  {% if theme.duoshuo %}
+ <!-- {% if theme.duoshuo %}
     {% set duoshuo_shortname = config.duoshuo.shortname %}
   {% else %}
     {% set duoshuo_shortname = config.duoshuo_shortname %}
@@ -16,5 +16,7 @@
       (document.getElementsByTagName('head')[0]
       || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
-  </script>
+  </script>-->
+
+  
 {% endif %}

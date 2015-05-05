@@ -9,8 +9,7 @@
 {% block content %}
 
   <div id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
+    <!--<span class="archive-move-on"></span>
     <span class="archive-page-counter">
       {% set cheers %}
       {% set posts_length = site.posts.length %}
@@ -22,11 +21,9 @@
       {% else %} {% set cheers = 'um' %}
       {% endif %}
       {{ __('cheers.' + cheers) }}! {{ _p("counter.archive_posts", site.posts.length) }} {{ __('keep_on') }}
-    </span>
-
+    </span>-->
     {% for post in page.posts %}
-
-      {# Show year #}
+      <!--{# Show year #}
       {% set year %}
       {% set post.year = post.date | date('Y') %}
 
@@ -36,16 +33,11 @@
           <h2 class="archive-year motion-element" id="archive-year-{{ year }}">{{ year }}</h2>
         </div>
       {% endif %}
-      {# endshow #}
-
+      {# endshow #}-->
       {{ post_template.render(post) }}
-
     {% endfor %}
-
   </div>
-
   {% include '_partials/pagination.swig' %}
-
 {% endblock %}
 
 {% block sidebar %}
